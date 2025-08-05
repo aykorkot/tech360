@@ -1,0 +1,208 @@
+// ========================================= //
+// buttons
+// ========================================= //
+
+// V A R S
+$ctaDark : (
+    "color":                        var(--white),
+    "bg-color":                     var(--black),
+    "border-color":                 var(--black),
+
+    "hover-color":                  var(--black),
+    "hover-bg-color":               transparent,
+    "hover-border-color":           var(--black),
+);
+
+$ctaLight : (
+    "color":                        var(--black),
+    "bg-color":                     transparent,
+    "border-color":                 var(--black),
+
+    "hover-color":                  var(--white),
+    "hover-bg-color":               var(--black),
+    "hover-border-color":           var(--black),
+);
+
+$ctaWhite : (
+    "color":                        var(--white),
+    "bg-color":                     var(--blue-2),
+    "border-color":                 transparent,
+
+    "hover-color":                  var(--blue-2),
+    "hover-bg-color":               var(--white),
+    "hover-border-color":           var(--blue-2),
+);
+
+$ctaYellow : (
+    "color":                        var(--blue-2),
+    "bg-color":                     var(--yellow),
+    "border-color":                 transparent,
+
+    "hover-color":                  var(--yellow),
+    "hover-bg-color":               var(--blue-2),
+    "hover-border-color":           var(--white),
+);
+
+// M I X I N S
+@mixin make-button($options) {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 12px 20px;
+    background-color: map-get($options, "bg-color") !important;
+    border: rem(1) solid map-get($options, "border-color") !important;
+    color: map-get($options, "color") !important;
+    outline: none !important;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: var(--Lexend);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: .8px;
+    white-space: normal;
+    z-index: 1;
+    transition: var(--bezier);
+    height: unset !important;
+    @include media-breakpoint-down(sm) {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    @media (hover: hover) {
+        &:hover {
+            background-color: map-get($options, "hover-bg-color") !important;
+            border-color: map-get($options, "hover-border-color") !important;
+            color: map-get($options, "hover-color") !important;
+        }
+    }
+
+    &[disabled] {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
+
+.btn {
+    @include make-button($ctaWhite);
+    &.btn-light {
+        @include make-button($ctaLight);
+    }
+    &.btn-white {
+        @include make-button($ctaWhite);
+    }
+    &.btn-default {
+        @include make-button($ctaWhite);
+    }
+    &.btn-primary {
+        @include make-button($ctaWhite);
+    }
+    &.btn-black {
+        @include make-button($ctaDark);
+    }
+    &.btn-yellow {
+        @include make-button($ctaYellow);
+    }
+}
+
+.back {
+    &__button {
+        display: inline-flex;
+        position: relative;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: rem(17);
+        color: var(--blue-2) !important;
+        padding: rem(6) rem(50);
+        margin-bottom: rem(20);
+        white-space: nowrap;
+        @include media-breakpoint-up(lg) {
+            padding: rem(5) rem(50);
+        }
+        &:hover {
+            color: var(--red) !important;
+            div > span {
+                translate: 0 0;
+            }
+        }
+        > span {
+            position: relative;
+        }
+        div {
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            > span {
+                display: flex;
+                align-items: center;
+                rotate: 180deg;
+                translate: rem(10) 0;
+                transition: var(--bezier);
+            }
+        }
+        svg {
+            height: rem(10);
+            width: rem(40);
+            display: block;
+            fill: currentColor;
+            transition: var(--bezier);
+            transition-property: fill;
+        }
+
+        &--right {
+            div {
+                left: auto;
+                right: 0;
+                > span {
+                    rotate: none;
+                    translate: rem(-10) 0;
+                }
+            }
+        }
+    }
+    &__toTop {
+        background: var(--black);
+        color: var(--white);
+        position: fixed;
+        right: rem(20);
+        bottom: rem(20);
+        border: 1px solid var(--black);
+        border-radius: 50%;
+        width: rem(50);
+        height: rem(50);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        rotate: 90deg;
+        opacity: 0;
+        pointer-events: none;
+        translate: 250% 0;
+        z-index: 10;
+        transition: var(--bezier);
+
+        &:hover {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        &.is-visible {
+            opacity: 1;
+            pointer-events: auto;
+            translate: 0 0;
+        }
+
+        i {
+            font-size: rem(31);
+        }
+    }
+}
+
+.bootstrap-filestyle .btn {
+    white-space: nowrap !important;
+}

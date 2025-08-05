@@ -1,0 +1,62 @@
+// ========================================= //
+// Fonts
+// ========================================= //
+
+:root {
+
+    --Lexend        : "Lexend", sans-serif;
+    --Tenez         : "Tenez Test", sans-serif;
+    --Lexend        : "Lexend", sans-serif;
+
+    --icomoon : 'icomoon' !important;
+
+    --body-font-family: var(--Lexend);
+    --body-font-weight: 300;
+    --body-line-height: var(--p-line-height);
+
+    --h1-font-size: #{rem(44)};
+    --h1-line-height: #{rem(54)};
+
+    --h2-font-size: #{rem(36)};
+    --h2-line-height: #{rem(46)};
+
+    --h3-font-size: #{rem(26)};
+    --h3-line-height: #{rem(36)};
+
+    --h4-font-size: #{rem(22)};
+    --h4-line-height: #{rem(26)};
+
+    --h5-font-size: #{rem(18)};
+    --h5-line-height: #{rem(24)};
+
+    --h6-font-size: #{rem(16)};
+    --h6-line-height: #{rem(22)};
+
+    --p-font-size       : #{14px};
+    --p-line-height     : #{20px};
+
+
+    // M E D I A   Q U E R I E S
+    @include media-breakpoint-up(lg) { // min-width: 992px
+
+        --h1-font-size: #{rem(64)};
+        --h1-line-height: #{rem(74)};
+
+        --h2-font-size: #{rem(46)};
+        --h2-line-height: #{rem(56)};
+
+        --h3-font-size: #{rem(36)};
+        --h3-line-height: #{rem(46)};
+
+        --h4-font-size: #{rem(26)};
+        --h4-line-height: #{rem(36)};
+
+        --h5-font-size: #{rem(22)};
+        --h5-line-height: #{rem(26)};
+
+        --h6-font-size: #{rem(18)};
+        --h6-line-height: #{rem(24)};
+
+    }
+
+}

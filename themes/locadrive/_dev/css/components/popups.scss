@@ -1,0 +1,71 @@
+// ========================================= //
+// Popups
+// ========================================= //
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgba(var(--black-rgb), 0.6);
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: var(--bezier);
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    &__inner {
+        background-color: var(--white);
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        overflow: auto;
+        margin: auto 0 0;
+        transform: none;
+        @extend %scrollBar;
+        @include media-breakpoint-up(lg) {
+            max-width: rem(550);
+            height: 100%;
+            margin: 0 0 0 auto;
+        }
+        @include media-breakpoint-up(xxl) {
+            max-width: rem(650);
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: rem(20);
+        font-size: var(--h3-font-size);
+        line-height: var(--h3-line-height);
+        border-bottom: rem(1) solid var(--gray-8);
+    }
+
+    &__close {
+        display: flex;
+        padding-left: rem(20);
+        cursor: pointer;
+        svg {
+            width: rem(24);
+            height: rem(24);
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-flow: column;
+        flex: 1;
+        padding: rem(20) rem(20) rem(40);
+    }
+}

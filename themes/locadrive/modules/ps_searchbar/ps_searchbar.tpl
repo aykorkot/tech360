@@ -1,0 +1,48 @@
+{**
+ * 2007-2020 PrestaShop SA and Contributors
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/AFL-3.0
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@prestashop.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please refer to https://www.prestashop.com for more information.
+ *
+ * @author    PrestaShop SA <contact@prestashop.com>
+ * @copyright 2007-2020 PrestaShop SA and Contributors
+ * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
+ * International Registered Trademark & Property of PrestaShop SA
+ *}
+
+<div id="search_widget" class="search-widgets" data-search-controller-url="{$search_controller_url}">
+    {* <div class="header__tools--link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21.076" height="21.076" viewBox="0 0 21.076 21.076">
+            <g id="Group_6" data-name="Group 6" transform="translate(-1521.489 -53.955)">
+                <path id="Ellipse_739" d="M10.128,19.809A10.029,10.029,0,0,1,0,9.905,10.03,10.03,0,0,1,10.128,0,10.03,10.03,0,0,1,20.257,9.905,10.03,10.03,0,0,1,10.128,19.809Zm0-18.283A8.485,8.485,0,0,0,1.56,9.905a8.485,8.485,0,0,0,8.568,8.379A8.485,8.485,0,0,0,18.7,9.905,8.485,8.485,0,0,0,10.128,1.526Z" transform="translate(1521.489 53.955)" fill="#200e32"/>
+                <path id="Line_181" d="M.228.224A.793.793,0,0,1,1.243.149l.088.074L5,3.8A.751.751,0,0,1,5,4.876a.793.793,0,0,1-1.016.075l-.088-.074L.229,1.3A.751.751,0,0,1,.228.224Z" transform="translate(1537.339 69.93)" fill="#200e32"/>
+            </g>
+        </svg>
+    </div> *}
+    <form method="get" action="{$search_controller_url}">
+        <input type="hidden" name="controller" value="search">
+        <i class="search" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 21.076 21.076">
+                <g id="Group_6" data-name="Group 6" transform="translate(-1521.489 -53.955)">
+                    <path id="Ellipse_739" d="M10.128,19.809A10.029,10.029,0,0,1,0,9.905,10.03,10.03,0,0,1,10.128,0,10.03,10.03,0,0,1,20.257,9.905,10.03,10.03,0,0,1,10.128,19.809Zm0-18.283A8.485,8.485,0,0,0,1.56,9.905a8.485,8.485,0,0,0,8.568,8.379A8.485,8.485,0,0,0,18.7,9.905,8.485,8.485,0,0,0,10.128,1.526Z" transform="translate(1521.489 53.955)" fill="#200e32"/>
+                    <path id="Line_181" d="M.228.224A.793.793,0,0,1,1.243.149l.088.074L5,3.8A.751.751,0,0,1,5,4.876a.793.793,0,0,1-1.016.075l-.088-.074L.229,1.3A.751.751,0,0,1,.228.224Z" transform="translate(1537.339 69.93)" fill="#200e32"/>
+                </g>
+            </svg>
+        </i>
+        <input type="text" name="s" value="{$search_string}" placeholder="{l s='Search our catalog' d='Shop.Theme.Catalog'}" aria-label="{l s='Search' d='Shop.Theme.Catalog'}">
+        <i class="material-icons clear" aria-hidden="true">clear</i>
+    </form>
+</div>

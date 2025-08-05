@@ -1,0 +1,123 @@
+// ========================================= //
+// Slick
+// ========================================= //
+
+.slick {
+    &-initialized {
+        .slick {
+            &-slide {
+                display: block;
+            }
+        }
+    }
+    &-slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        user-select: none;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+    }
+    &-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        transform: translate3d(0, 0, 0);
+    }
+    &-track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate3d(0, 0, 0);
+    }
+    &-slide {
+        display: none;
+        float: left;
+        height: 100%;
+        min-height: rem(1);
+    }
+    &-arrow {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        translate: 0 -50%;
+        cursor: pointer;
+        color: var(--black);
+        border: 0;
+        border-radius: 50%;
+        outline: none !important;
+        background-color: white !important;
+        background: transparent url("../img/next.svg") center no-repeat;
+        background-size: 100%;
+        z-index: 1;
+        transition: .3s ease;
+        @include media-breakpoint-up(lg) {
+            width: 40px;
+            height: 40px;
+        }
+        &:hover {
+            @include media-breakpoint-up(lg) {
+                transform: scale(1.2);
+            }
+        }
+        &[aria-disabled="true"] {
+            opacity: 0.3; 
+            pointer-events: none;
+        }
+    }
+    &-prev {
+        left: 0;
+        scale: -1;
+    }
+    &-next {
+        right: 0;
+    }
+    &-dots {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(8);
+        padding-top: rem(20);
+        @include media-breakpoint-up(lg) {
+            gap: rem(10);
+            padding-top: rem(40);
+        }
+        li {
+            display: flex;
+            button {
+                background-color: var(--gray-7);
+                height: 4px;
+                width: 15px;
+                font-size: 0;
+                border-radius: 4px;
+                border: 0;
+                outline: none;
+                cursor: pointer;
+                overflow: hidden;
+                @include media-breakpoint-up(lg) {
+                    width: 20px;
+                }
+            }
+            &.slick-active {
+                button {
+                    background-color: var(--blue-2);
+                    width: 30px;
+                    @include media-breakpoint-up(lg) {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

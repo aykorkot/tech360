@@ -1,0 +1,153 @@
+// ========================================= //
+// Account
+// ========================================= //
+
+.page-my-account,
+.page-addresses,
+.page-customer-account,
+#checkout,
+#contact {
+    form {
+        @include media-breakpoint-up(lg) {
+            width: 50%;
+        }
+        &#customer-form,
+        &#form-address {
+            width: 100%;
+        }
+        .form-informations {
+            &-title {
+                font-weight: 600;
+                color: var(--blue-2);
+            }
+            &-option {
+                color: var(--blue-2);
+            }
+        }
+        .form {
+            &-group {
+                margin-bottom: 20px;
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            &-control {
+                &-label {
+                    font-size: 14px;
+                    line-height: 1;
+                    font-weight: 300;
+                    text-align: left;
+                    margin: 0 0 10px;
+                    &[for="field-optin"],
+                    &[for="field-psgdpr"],
+                    &[for="field-newsletter"],
+                    &[for="field-customer_privacy"] {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .form-informations {
+            &-subtitle {
+                display: block;
+                line-height: 16px;
+                margin: 2px 0 0;
+            }
+        }
+    }
+}
+
+#authentication,
+#registration,
+#password {
+    .page {
+        &-header {
+            
+            h1 {
+                font-size: 25px;
+                font-weight: 700;
+                color: var(--blue-2);
+                letter-spacing: 0;
+                line-height: 1;
+                @include media-breakpoint-up(lg) {
+                    font-size: 35px;
+                }
+            }
+        }
+        &-header,
+        &-footer,
+        &-content {
+            display: block;
+            padding: 0;
+        }
+        &-footer {
+            border-top: 0;
+        }
+    }
+    form {
+        width: 100%;
+        .form-group.center-email-fields {
+            margin: 0;
+        }
+        #send-reset-link {
+            width: 100%;
+        }
+    }
+}
+
+#module-ps_emailalerts-account,
+#module-egwishlist-view {
+    .page {
+        &-header {
+            background-color: var(--gray);
+            height: rem(200);
+            @include media-breakpoint-up(lg) {
+                height: rem(400);
+            }
+        }
+        &-header,
+        &-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: rem(20);
+        }
+        &-content {
+            padding: rem(20);
+            @include media-breakpoint-up(lg) {
+                padding: rem(40);
+            }
+        }
+        &-footer {
+            border-top: rem(1) solid var(--black);
+        }
+    }
+}
+
+.link-item {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height: 100%;
+    min-height: 130px;
+    padding: 20px 60px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--blue-2);
+    background-color: var(--yellowLight);
+    transition: .3s ease-in-out;
+    &:hover {
+        background-color: #0077ff2e;
+        color: var(--blue-2);
+    }
+    @extend %clipPath;
+    i {
+        font-size: 30px;
+    }
+}

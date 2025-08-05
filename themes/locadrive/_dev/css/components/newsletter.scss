@@ -1,0 +1,67 @@
+// ========================================= //
+// Newsletter
+// ========================================= //
+
+.block_newsletter {
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+        width: rem(434);
+    }
+
+    &--title {
+        position: relative;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        color: var(--white);
+        @include media-breakpoint-down(lg) {
+            font-size: 14px;
+            line-height: 20px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--yellow);
+        }
+    }
+
+    &--description {
+        margin-bottom: rem(20);
+        color: var(--white);
+    }
+
+    .field {
+        position: relative;
+        width: 100%;
+        display: flex;
+    }
+
+    .input-wrapper {
+        flex: 1;
+        input[type="email"] {
+            border-right: 0 !important;
+        }
+    }
+
+    .btn {
+        padding: rem(10) rem(36);
+        border-radius: 0;
+        @include media-breakpoint-down(md) {
+            height: 40px !important;
+        }
+    }
+
+    form {
+        width: 100% !important;
+    }
+
+}

@@ -1,0 +1,10 @@
+#wrapper {
+  padding-top: rem(40);
+}
+#product {
+  #wrapper {
+    @include media-breakpoint-down(lg) {
+      padding-top: 0;
+    }
+  }
+}

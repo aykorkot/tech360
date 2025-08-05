@@ -1,0 +1,101 @@
+// ========================================= //
+// Why Choose
+// ========================================= //
+
+.why-choose {
+    padding: rem(40) 0;
+    @include media-breakpoint-up(lg) {
+        padding-block: rem(64) rem(174);
+    }
+
+    .container {
+        max-width: rem(1724);
+    }
+
+    &__wrapper {
+        @include media-breakpoint-up(lg) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__img {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__details {
+        &--inner {
+            background-color: var(--gray);
+            padding: rem(40) rem(20);
+            position: relative;
+            @include media-breakpoint-up(lg) {
+                top: rem(76);
+                left: rem(-126);
+                width: calc(100% + #{rem(126)});
+                height: 100%;
+                padding: rem(132) rem(122) rem(136) rem(126);
+            }
+        }
+    }
+
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: rem(10);
+        @include media-breakpoint-up(lg) {
+            font-size: rem(47);
+            line-height: rem(77);
+        }
+        span {
+            display: block;
+            color: var(--beige);
+            font-size: rem(47);
+            @include media-breakpoint-up(lg) {
+                font-size: rem(86);
+            }
+        }
+    }
+
+    h3 {
+        font-family: var(--Lexend);
+        font-weight: 600;
+        font-size: rem(14);
+        line-height: 1;
+        margin-bottom: rem(4);
+        // @include media-breakpoint-up(lg) {
+        //     font-size: rem(26);
+        //     line-height: rem(28);
+        // }
+    }
+
+    p {
+        margin-bottom: rem(40);
+    }
+
+    ul {
+        margin-top: rem(20);
+        li {
+            display: flex;
+            align-items: center;
+            gap: rem(20);
+            padding: rem(10) 0;
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    .c {
+        &-icon {
+            img {
+                min-width: rem(40);
+                width: rem(40);
+                max-height: rem(32);
+                object-fit: contain;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94" height="46" viewBox="0 0 94 46">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1455" data-name="Rectangle 1455" width="94" height="46" rx="10" transform="translate(534 2909)" fill="#fff" stroke="#877e7e" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_4771" data-name="Group 4771" transform="translate(-310 -2909)">
+    <g id="Rectangle_1462" data-name="Rectangle 1462" transform="translate(310 2909)" fill="#fff" stroke="#d1d1d1" stroke-width="1">
+      <rect width="94" height="46" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="93" height="45" rx="9.5" fill="none"/>
+    </g>
+    <g id="Mask_Group_7" data-name="Mask Group 7" transform="translate(-224)" clip-path="url(#clip-path)">
+      <g id="visa-logo" transform="translate(371.774 2687.634)">
+        <path id="polygon9" d="M976.482,265.347h-4.416l2.759-17.057h4.416Z" transform="translate(-770.89 -12.425)" fill="#00579f"/>
+        <path id="path11" d="M1280.568,236.282a10.867,10.867,0,0,0-3.956-.726c-4.355,0-7.422,2.322-7.441,5.643-.036,2.449,2.2,3.811,3.865,4.628,1.707.835,2.286,1.379,2.286,2.123-.017,1.143-1.379,1.669-2.648,1.669a8.777,8.777,0,0,1-4.138-.909l-.581-.273-.617,3.829a13.423,13.423,0,0,0,4.918.909c4.628,0,7.641-2.287,7.676-5.825.018-1.948-1.161-3.43-3.7-4.646-1.543-.779-2.487-1.307-2.487-2.105.018-.726.8-1.469,2.54-1.469a7.494,7.494,0,0,1,3.286.649l.4.181.6-3.683Z" transform="translate(-1058.984)" fill="#00579f"/>
+        <path id="path13" d="M1779.464,259.292c.364-.979,1.761-4.773,1.761-4.773-.018.036.362-1,.581-1.633l.308,1.47s.835,4.083,1.017,4.935Zm5.444-11.015H1781.5a2.177,2.177,0,0,0-2.305,1.416l-6.551,15.641h4.628l.926-2.559h5.662c.13.6.526,2.559.526,2.559h4.083l-3.559-17.057Z" transform="translate(-1552.018 -12.413)" fill="#00579f"/>
+        <path id="path15" d="M382.754,248.291l-4.32,11.632-.471-2.359a13.055,13.055,0,0,0-6.1-7.143l3.956,14.916h4.664l6.933-17.039Z" transform="translate(-185.252 -12.425)" fill="#00579f"/>
+        <path id="path17" d="M189.172,248.284h-7.1l-.073.344c5.535,1.416,9.2,4.828,10.707,8.928l-1.543-7.839a1.825,1.825,0,0,0-2-1.429Z" transform="translate(0 -12.419)" fill="#faa61a"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+// ========================================= //
+// styles
+// ========================================= //
+
+// Config
+@import "config/layout";
+
+// Tools
+@import "tools/bootstrap-grid/mixins/breakpoints";
+@import "tools/pxToEm";
+@import "tools/pxToRem";
+@import "tools/pxToVw";
+@import "tools/stripUnit";
+
+// Vars
+@import "vars/font-family";
+@import "vars/colors";
+@import "vars/fonts";
+
+// Commons
+@import "commons/buttons";
+@import "commons/core";
+@import "commons/icons";
+@import "commons/images";
+@import "commons/inputs";
+@import "commons/typos";
+
+// Componenets
+@import "components/homepage";
+@import "components/header";
+@import "components/footer";
+@import "components/categories";
+@import "components/pagination";
+@import "components/contact-banner";
+@import "components/newsletter";
+@import "components/hp-news";
+@import "components/car_reservation";
+@import "components/guarantess";
+@import "components/slick";
+@import "components/popular-categories";
+@import "components/featuredproducts";
+@import "components/reviews";
+@import "components/breadcrumbs";
+@import "components/search-filter";
+@import "components/search-widget";
+@import "components/hp-banner";
+@import "components/why-choose";
+@import "components/block-reassurance";
+@import "components/accordions";
+@import "components/popups";
+
+// Modules
+
+// Pages
+@import "components/cart";
+@import "components/account";
+@import "components/login";
+@import "components/forgotten-password";
+@import "components/checkout-steps";
+@import "components/contact";
+@import "components/products";
+@import "components/cms";

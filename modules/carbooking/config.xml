@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <name>carbooking</name>
+    <displayName>Car Booking</displayName>
+    <version>1.0.0</version>
+    <author>Locadrive</author>
+    <description>Module de réservation de voiture</description>
+</module>

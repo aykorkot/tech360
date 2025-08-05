@@ -1,0 +1,90 @@
+// ========================================= //
+// Guarantees
+// ========================================= //
+
+.guarantees {
+    padding: 40px 20px;
+    background: var(--gray-10);
+    @include media-breakpoint-down(md) {
+        padding: 30px 15px 20px;
+    }
+    .container {
+        max-width: rem(1640);
+        @include media-breakpoint-down(md) {
+            padding: 0;
+        }
+    }
+    .c-title {
+        border-radius: 0;
+        background: none;
+        padding: 0;
+        margin: 0 auto 30px;
+        display: none;
+        @include media-breakpoint-down(md) {
+            margin: 0 auto 12px;
+        }
+        h2 {
+            margin: 0;
+            &:before {
+                content: none;
+            }
+        }
+        .container {
+            max-width: 100%;
+        }
+    }
+    &__item {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        @include media-breakpoint-up(lg) {
+            flex: 1;
+            padding-inline: rem(20);
+        }
+
+        &:not(:last-child) {
+            border-bottom: rem(1) solid var(--gray-8);
+            @include media-breakpoint-up(lg) {
+                border-right: rem(1) solid var(--gray-8);
+                border-bottom: 0;
+            }
+        }
+
+        &--title {
+            font-size: 16px;
+            line-height: 1;
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+                margin-bottom: 6px;
+            }
+        }
+
+        &--subtitle {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: normal;
+        }
+
+        &--description {
+            margin-top: rem(7);
+            p {
+                margin: 0;
+            }
+        }
+
+        &--logos {
+            display: flex;
+            justify-content: center;
+            gap: rem(10);
+            margin-top: rem(25);
+        }
+
+        img {
+            height: rem(30);
+            width: auto;
+        }
+    }
+}

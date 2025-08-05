@@ -1,0 +1,75 @@
+// ========================================= //
+// Pagination
+// ========================================= //
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 40px 0;
+    @include media-breakpoint-up(lg) {
+        padding: 70px 0;
+    }
+    ul {
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        gap: rem(10);
+        @include media-breakpoint-up(lg) {
+            gap: rem(16);
+        }
+        &:after {
+            content: none;
+        }
+        li {
+            color: var(--blue-2);
+            > * {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: rem(25);
+                height: rem(25);
+                border: rem(1) solid var(--blue-2);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1;
+                color: var(--blue-2);
+                text-decoration: none;
+                transition: var(--bezier);
+                @include media-breakpoint-up(lg) {
+                    width: rem(40);
+                    height: rem(40);
+                    font-size: 20px;
+                }
+                i {
+                    color: var(--black);
+                    transition: var(--bezier);
+                }
+            }
+            &.current {
+                background: var(--blue-2);
+                color: white;
+                > * {
+                    color: var(--white);
+                }
+            }
+            .prev,
+            .next {
+                font-size: 0;
+                background-color: var(--blue-2);
+                &:hover {
+                    border-color: var(--blue-2);
+                    background-color: transparent;
+                    i {
+                        color: var(--blue-2);
+                    }
+                }
+                i {
+                    color: var(--white);
+                }
+            }
+             
+        }
+    }
+}

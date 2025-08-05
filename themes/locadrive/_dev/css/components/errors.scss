@@ -1,0 +1,70 @@
+#products,
+#pagenotfound {
+  #main {
+    .page-header {
+      display: none;
+      margin: 2rem 0 3rem;
+    }
+  }
+
+  .page-not-found {
+    max-width: 1000px;
+    padding: 0;
+    margin: 0 auto 70px;
+    overflow: auto;
+    font-size: $font-size-sm;
+    color: $gray;
+    background: $white;
+    img {
+      max-width: 450px;
+      width: 100%;
+      margin: 0 auto;
+      @include media-breakpoint-down(sm) {
+        max-width: 280px;
+      }
+    }
+    h2 {
+      font-size: 25px;
+      line-height: 30px;
+      font-weight: 700;
+      color: var(--blue-2);
+      text-align: center;
+      margin: 0 0 10px;
+      @include media-breakpoint-up(md) {
+        font-size: 35px;
+        line-height: 1;
+      }
+    }
+    h4 {
+      margin: 0.5rem 0 1rem;
+      font-size: $base-font-size;
+      font-weight: 700;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 20px;
+      @include media-breakpoint-up(md) {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 auto 30px;
+      }
+    }
+    .btn-center {
+      text-align: center;
+      .btn {
+        max-width: 250px;
+        width: 100%;
+      }
+    }
+    .search-widget {
+      float: none;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+}

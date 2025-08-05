@@ -1,0 +1,58 @@
+// ========================================= //
+// Reassurance
+// ========================================= //
+
+.blockreassurance_product {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0;
+    padding: 0;
+
+    > div {
+        width: 100%;
+        padding: rem(14);
+        border: rem(1) solid var(--gray-2);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        @include media-breakpoint-up(sm) {
+            flex: 1;
+        }
+        &:not(:last-child) {
+            border-bottom: 0;
+            @include media-breakpoint-up(sm) {
+                border-right: 0;
+                border-bottom: rem(1) solid var(--gray-2);
+            }
+        }
+    }
+
+    .item-product {
+        display: flex;
+        height: unset;
+        width: unset;
+        padding: 0;
+        margin: 0 0 rem(10);
+        img,
+        svg {
+            height: rem(20);
+            width: auto;
+        }
+    }
+
+    .block-title {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        text-transform: uppercase;
+        margin: 0;
+        max-width: rem(171);
+    }
+
+    p {
+        font-size: rem(13);
+        margin: 0;
+    }
+}

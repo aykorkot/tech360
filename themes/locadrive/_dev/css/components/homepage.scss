@@ -1,0 +1,193 @@
+#index {
+    #wrapper {
+        padding: 0;
+    }
+    .featured-products {
+        .products {
+            &.slick-slider {
+                padding: 0 35px;
+                @include media-breakpoint-up(lg) {
+                    padding: 0 42px;
+                }
+                @media only screen and (max-width: 480px) {
+                    padding: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+.block-reassurance {
+    margin-bottom: 40px;
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 60px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 30px 20px;
+        background-color: var(--yellowLight);
+        border-radius: 10px;
+        @include media-breakpoint-down(md) {
+            padding: 25px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+    }
+    li {
+        flex: 0 0 auto;
+        @include media-breakpoint-down(md) {
+            width: 48%;
+        }
+        @media only screen and (max-width: 640px) {
+            width: 100%;
+        }
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .reassurance-icon {
+        width: 45px;
+        @media only screen and (max-width: 640px) {
+            width: 35px;
+        }
+    }
+    .reassurance-title {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 6px;
+    }
+    .reassurance-description {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1;
+    }
+}
+
+.brands {
+    margin-bottom: 40px;
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 60px;
+    }  
+    h2 {
+        position: relative;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0 0 40px;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--blue-2);
+        @include media-breakpoint-down(md) {
+           font-size: 18px;
+           margin: 0 0 30px;
+        }
+    }
+    ul {
+        display: flex;
+        gap: 20px;
+        flex-flow: wrap;
+        justify-content: center;
+        &.slick-slider {
+            padding: 0 35px;
+            @include media-breakpoint-up(lg) {
+                padding: 0 42px;
+            }
+        }
+        li {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            flex: 0 0 auto;
+            &.slick-slide {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    img {
+        filter: grayscale(100%);
+    }
+}
+
+.custom-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+    @include media-breakpoint-up(lg) {
+        margin-top: 60px;
+    } 
+    @include media-breakpoint-down(md) {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 15px !important;
+    }
+    @include media-breakpoint-down(xs) {
+        grid-template-columns: 1fr !important;
+    }
+    &-block {
+        position: relative;
+    }
+    &-link {
+        display: block;
+        overflow: hidden;
+        border-radius: 10px;
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &-intro {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 30px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+    &-description {
+        p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1;
+            margin: 0;
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+            }
+        }
+    }
+    h2 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 30px;
+        max-width: 220px;
+        @include media-breakpoint-down(md) {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+    img {
+        width: 100%;
+        border-radius: 10px;
+        transition: .3s ease-in-out;
+    }
+    .back__button {
+        align-items: center;
+        padding: 0;
+        color: var(--black) !important;
+        margin: 0;
+        svg {
+            margin-right: 7px; 
+            fill: var(--black);
+            width: 26px;
+        }
+    }
+}

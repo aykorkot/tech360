@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94" height="46" viewBox="0 0 94 46">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1456" data-name="Rectangle 1456" width="94" height="46" rx="10" transform="translate(942 2909)" fill="#fff" stroke="#d1d1d1" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_4775" data-name="Group 4775" transform="translate(-942 -2909)">
+    <g id="Mask_Group_9" data-name="Mask Group 9" clip-path="url(#clip-path)">
+      <g id="dhl-logo.42df9c9" transform="translate(957.05 2927.594)">
+        <path id="Path_17757" data-name="Path 17757" d="M0,12.11H7.743l-.445.623H0Z" transform="translate(0 -3.899)" fill="#d40511"/>
+        <path id="Path_17758" data-name="Path 17758" d="M89.47,12.733H79.992l.489-.623h9.033v.623Z" transform="translate(-25.614 -3.899)" fill="#d40511"/>
+        <path id="Path_17759" data-name="Path 17759" d="M0,10.408H8.633l-.489.623H0Z" transform="translate(0 -3.354)" fill="#d40511"/>
+        <path id="Path_17760" data-name="Path 17760" d="M0,8.706H9.523l-.489.623H0Z" transform="translate(0 -2.809)" fill="#d40511"/>
+        <path id="Path_17761" data-name="Path 17761" d="M89.889,11.031H81.3l.489-.623h8.143v.623Z" transform="translate(-26.033 -3.354)" fill="#d40511"/>
+        <path id="Path_17762" data-name="Path 17762" d="M83.034,8.706h7.253v.623H82.545Z" transform="translate(-26.431 -2.809)" fill="#d40511"/>
+        <path id="Path_17763" data-name="Path 17763" d="M12.306,10.448,16.4,4.975h5.073c.578,0,.578.222.267.578-.267.356-.756,1.023-1.023,1.379-.133.222-.4.534.445.534H27.97a6.948,6.948,0,0,1-5.7,3.026C19.6,10.448,12.306,10.448,12.306,10.448Z" transform="translate(-3.941 -1.614)" fill="#d40511"/>
+        <path id="Path_17764" data-name="Path 17764" d="M43.01,8.706l-2.225,2.981H34.955L37.18,8.706Z" transform="translate(-11.193 -2.809)" fill="#d40511"/>
+        <path id="Path_17765" data-name="Path 17765" d="M55.492,8.706l-2.225,2.981H47.393l2.225-2.981Z" transform="translate(-15.175 -2.809)" fill="#d40511"/>
+        <path id="Path_17766" data-name="Path 17766" d="M61.688,8.706s-.445.578-.623.845c-.756.979-.089,2.136,2.314,2.136h9.434l2.225-2.981Z" transform="translate(-19.459 -2.809)" fill="#d40511"/>
+        <path id="Path_17767" data-name="Path 17767" d="M15.6-.021,13.55,2.693H24.675c.578,0,.578.222.267.578-.267.356-.756,1.023-1.023,1.379-.133.178-.4.534.445.534H28.9s.756-.979,1.335-1.824c.845-1.112.089-3.426-2.892-3.426C24.675-.021,15.6-.021,15.6-.021Z" transform="translate(-4.339 0)" fill="#d40511"/>
+        <path id="Path_17768" data-name="Path 17768" d="M53.277,5.206H38.948L42.864,0h5.874L46.513,2.981h2.625L51.364,0h5.874Z" transform="translate(-12.472 -0.021)" fill="#d40511"/>
+        <path id="Path_17769" data-name="Path 17769" d="M72.987,0,69.071,5.206h-6.23L66.757,0Z" transform="translate(-20.122 -0.021)" fill="#d40511"/>
+      </g>
+    </g>
+    <g id="Rectangle_1466" data-name="Rectangle 1466" transform="translate(942 2909)" fill="none" stroke="#d1d1d1" stroke-width="1">
+      <rect width="94" height="46" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="93" height="45" rx="9.5" fill="none"/>
+    </g>
+  </g>
+</svg>

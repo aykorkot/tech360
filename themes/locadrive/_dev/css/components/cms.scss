@@ -1,0 +1,270 @@
+// ========================================= //
+// CMS
+// ========================================= //
+
+body[id^="module-egblockbuilder"] .page-content {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0; 
+    background: unset;
+}
+
+.cms {
+
+    &__banner {
+        height: calc(100dvh - var(--header-height));
+        position: relative;
+        overflow: hidden;
+        isolation: isolate;
+        padding: rem(20);
+        display: flex;
+        align-items: center;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 80%;
+            height: 100%;
+            opacity: 0.66;
+            background: rgba(33, 33, 33, 0);
+            background: linear-gradient(180deg, rgba(33, 3, 3, 0) 0.00%, var(--black) 100.00%);
+            z-index: -1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+        }
+
+        &--content {
+            max-width: rem(650);
+        }
+
+        h1 {
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--white);
+        }
+
+    }
+
+    &__twoCols--img {
+        display: grid;
+        grid-template-columns: 1fr;
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &--col {
+            position: relative;
+            text-align: center;
+            isolation: isolate;
+            overflow: hidden;
+            &:not(:last-child) {
+                border-bottom: rem(1) solid var(--white);
+                @include media-breakpoint-up(lg) {
+                    border-bottom: 0;
+                    border-right: rem(1) solid var(--white);
+                }
+            }
+
+            &:hover {
+                img {
+                    scale: 1.15;
+                }
+            }
+
+            img {
+                aspect-ratio: 1 / 1;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: var(--bezier);
+            }
+
+            h2 {
+                font-weight: 600;
+                color: var(--white);
+                text-transform: uppercase;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                translate: -50% -50%;
+                z-index: 1;
+                max-width: 100%;
+                width: 100%;
+                padding: rem(20);
+                @include media-breakpoint-up(lg) {
+                    font-size: rem(64);
+                }
+            }
+        }
+    }
+
+    &__wysiwyg {
+        padding: rem(40) rem(20);
+        text-align: center;
+        @include media-breakpoint-up(lg) {
+            padding-block: rem(64);
+        }
+
+        &.cms__wysiwyg--bg {
+            background-color: var(--gray);
+            margin-bottom: rem(40);
+            @include media-breakpoint-up(lg) {
+                margin-bottom: rem(64);
+            }
+            .cms__wysiwyg {
+                &--title {
+                    .container {
+                        max-width: rem(750);
+                    }
+                }
+            }
+            p {
+                a {
+                    color: var(--beige) !important;
+                }
+            }
+        }
+
+        &--title {
+            margin-bottom: rem(20);
+            @include media-breakpoint-up(lg) {
+                margin-bottom: rem(30);
+            }
+            .container {
+                max-width: rem(1400);
+            }
+        }
+
+        &--content {
+            .container {
+                max-width: rem(988);
+            }
+        }
+
+        &--action {
+            padding-top: rem(20);
+            .btn {
+                min-width: rem(200);
+            }
+        }
+
+        h2 {
+            font-size: rem(36);
+            line-height: rem(36);
+            @include media-breakpoint-up(lg) {
+                font-size: rem(46);
+                line-height: rem(46);
+            }
+        }
+
+        p {
+            @include media-breakpoint-up(lg) {
+                font-size: rem(18);
+                line-height: rem(26);
+            }
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__shape {
+        padding: rem(40) rem(20);
+        @include media-breakpoint-up(lg) {
+            padding-block: rem(64);
+        }
+
+        &--wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: rem(30);
+            @include media-breakpoint-up(lg) {
+                grid-template-columns: 1fr rem(552);
+            }
+        }
+
+        &--img {
+            @include media-breakpoint-up(md) {
+                position: relative;
+                isolation: isolate;
+                padding-top: rem(39);
+            }
+
+            h2 {
+                font-weight: 600;
+                line-height: rem(36);
+                margin-bottom: rem(20);
+                width: 100%;
+                @include media-breakpoint-up(md) {
+                    background-color: var(--white);
+                    width: 40%;
+                    margin-bottom: rem(40);
+                }
+                @include media-breakpoint-up(lg) {
+                    width: rem(443) !important;
+                    font-size: rem(64);
+                    line-height: rem(66) !important;
+                    margin-bottom: rem(72);
+                }
+            }
+
+            img {
+                height: auto;
+            }
+        }
+
+        .img {
+            &-1 {
+                width: 100%;
+                @include media-breakpoint-up(md) {
+                    width: 60%;
+                }
+                @include media-breakpoint-up(lg) {
+                    width: rem(672) !important;
+                }
+            }
+            &-2 {
+                width: 100%;
+                @include media-breakpoint-up(md) {
+                    width: 60%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: -1;
+                }
+                @include media-breakpoint-up(lg) {
+                    width: calc(100% - #{rem(443)}) !important;
+                }
+            }
+        }
+
+        &--content {
+            p {
+                @include media-breakpoint-up(lg) {
+                    font-size: rem(26);
+                    line-height: rem(36);
+                    margin-bottom: rem(36);
+                }
+                i {
+                    font-weight: 100;
+                    @include media-breakpoint-up(lg) {
+                        font-size: rem(22);
+                    }
+                }
+            }
+        }
+    }
+
+}

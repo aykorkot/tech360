@@ -1,0 +1,153 @@
+.car-reservation {
+    margin: rem(50) 0;
+    h2 {
+        text-align: center;
+        margin: 0 0 rem(20);
+    }
+    &-content {
+        background-color: #f6f6f6;
+        padding: 40px 40px;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 -30px;
+        .form-group {
+            width: 50%;
+            flex: 0 0 auto;
+            margin: 0 0 30px;
+            padding: 0 30px;
+        }
+        .form-control {
+            font-size: 18px;
+            font-weight: 700;
+            min-height: 55px;
+            text-transform: uppercase;
+            padding: 0 20px !important;
+            cursor: pointer;
+        }
+        select {
+            option {
+                font-size: 18px;
+            }
+        }
+    }
+    label {
+        font-family: var(--Lexend);
+        font-size: 20px;
+        font-weight: 600;
+        display: block;
+        margin: 0 0 20px;
+    }
+    .form-btn { 
+        width: 100%;
+        margin: 10px 0 0;
+        padding: 0 30px;
+        text-align: center;
+        .btn {
+            font-size: 18px;
+            font-weight: 600;
+            min-height: 60px;
+            max-width: 300px;
+            width: 100%;
+        }
+    }
+}
+
+.modal {
+    &.eg-alert {
+        background: rgba(0, 0, 0, .6);
+        .modal-dialog {
+            max-width: 1000px;
+        }
+        .eg-alert-form {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 15px;
+            @include media-breakpoint-up(lg) {
+                grid-template-columns: 1fr 1fr;
+                column-gap: 30px;
+            }
+        }
+        .form-group {
+            position: relative;
+            display: block;
+            width: 100%;
+            margin: 0 0 20px;
+            @include media-breakpoint-up(lg) {
+                margin: 0 0 25px;
+            }
+        }
+        .form-control {
+            margin: 0 !important;
+        }
+        .alert-modal {
+            width: 100%;
+        }
+        .card {
+            padding: rem(40);
+            border-radius: 7px;
+            @include media-breakpoint-down(lg) {
+                padding: rem(30) rem(20);
+            }
+        }
+        .h4 {
+            font-size: rem(30);
+            line-height: 1;
+            margin: 0 0 30px;
+            @include media-breakpoint-up(lg) {
+                font-size: rem(40);
+            }
+        }
+        .close {
+            position: absolute;
+            top: 25px;
+            right: 40px;
+            font-size: 50px;
+            opacity: 1;
+            font-weight: 100;
+            outline: none;
+        }
+        .submit-btn {
+            margin: 20px 0 0;
+            .btn {
+                width: auto;
+                height: 45px !important;
+                padding: 0 30px;
+            }
+        }
+        .msg-success {
+            &-rejected {
+                font-family: var(--Lexend);
+                font-size: 25px;
+                font-weight: 700;
+                text-align: center;
+                line-height: 1.7;
+                color: var(--red);
+                @include media-breakpoint-down(lg) {
+                    font-size: 20px;
+                }
+            }
+            &-title {
+                font-family: var(--Lexend);
+                font-size: 27px;
+                font-weight: 700;
+                text-align: center;
+                line-height: 1.7;
+                @include media-breakpoint-down(lg) {
+                    font-size: 20px;
+                }
+            }
+            &-subtitle {
+                font-size: 16px;
+                font-weight: 300;
+                text-align: center;
+                line-height: 1;
+                @include media-breakpoint-down(lg) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

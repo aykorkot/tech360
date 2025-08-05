@@ -1,0 +1,111 @@
+// =========================================
+// inputs
+// =========================================
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea,
+select {
+    &, &.form-control {
+        background-color: transparent !important;
+        display: block;
+        width: 100%;
+        height: rem(48) !important;
+        border: rem(1) solid var(--gray-7) !important;
+        border-radius: 0 !important;
+        margin: 0;
+        padding: rem(10) !important;
+        box-shadow: none !important;
+        outline: none !important;
+        transition: var(--bezier);
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--black);
+        line-height: normal;
+        @include media-breakpoint-down(sm) {
+            height: rem(40) !important;
+        }
+        &::placeholder {
+            font-size: 14px;
+            color: var(--gray-7);
+        }
+
+        &.disabled,
+        &[disabled] {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        &.error {
+            border-color: var(--red) !important;
+        }
+        &#field-password {
+            border-right: 0;
+        }
+    }
+}
+
+textarea {
+    min-height: rem(230);
+    resize: none;
+}
+
+input {
+    accent-color: var(--blue-2);
+    &[id="use_same_address"] {
+        &+label {
+            font-size: 14px;
+            margin: 0;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.custom-radio {
+    border-color: var(--blue-2);
+    input[type=radio] {
+        &:checked {
+            + span {
+                background-color: var(--blue-2);
+            }
+        }
+    }
+}
+
+div.error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    color: var(--red);
+    font-size: rem(12);
+}
+
+.bootstrap-filestyle {
+    .group-span-filestyle {
+        .btn {
+            height: 100% !important;
+        }
+    }
+}
+
+.input-group {
+    .input-group-btn {
+        .btn {
+            white-space: nowrap;
+        }
+    }
+}

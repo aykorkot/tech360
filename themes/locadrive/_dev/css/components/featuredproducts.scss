@@ -1,0 +1,31 @@
+// ========================================= //
+// Featured Products
+// ========================================= //
+
+.featured-products {
+    padding: 40px 0;
+    @include media-breakpoint-up(lg) {
+        padding: 60px 0;
+    }
+    >.container {
+        padding: 0;
+    }
+    .c-title {
+        text-align: left;
+        margin-left: 0;
+    }
+    &__action {
+        padding-top: rem(30);
+        text-align: center;
+        @include media-breakpoint-up(lg) {
+            padding-top: rem(52);
+        }
+        .btn {
+            width: 100%;
+            max-width: 300px;
+            @media only screen and (max-width: 640px) {
+                max-width: 250px;
+            }
+        }
+    }
+}
